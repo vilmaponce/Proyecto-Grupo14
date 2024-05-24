@@ -182,6 +182,7 @@ document.getElementById("registroForm").addEventListener("submit", function (eve
 
     let formularioValido = document.querySelectorAll('.error:not(:empty)').length === 0;
     if (formularioValido) {
+        alert("Formulario enviado con éxito");
         this.submit();
     }
 
