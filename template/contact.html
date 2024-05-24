@@ -81,33 +81,33 @@
             <article>
                 <h2 id="form-2">¡Hablemos!</h2>
                 <p>Dejanos tus datos y te contactaremos</p>
-                <div class="form-content">
+                <form action="https://formsubmit.co/visuparg@hotmail.com" method="POST" />
                     <!-- Nombre y Apellido -->
                     <div class="form-group">
                         <div class="inputBox">
-                            <input type="text" id="nombre" placeholder="Nombre(s): Ana María" required>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre(s): Ana María" required>
                             <i>Nombre(s)</i>
                         </div>
                         <div class="inputBox">
-                            <input type="text" id="apellido" placeholder="Apellido(s): Pérez" required>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido(s): Pérez" required>
                             <i>Apellido(s)</i>
                         </div>
                     </div>
-                    <!-- Correo y Telefono de contacto -->
+                    <!-- Correo y Teléfono de contacto -->
                     <div class="form-group">
                         <div class="inputBox">
-                            <input type="email" id="correo" placeholder="ana@correo.com" required>
+                            <input type="email" id="correo" name="correo" placeholder="ana@correo.com" required>
                             <i>Correo</i>
                         </div>
                         <div class="inputBox">
-                            <input type="tel" id="telefono" placeholder="1122334455" required>
+                            <input type="tel" id="telefono" name="telefono" placeholder="1122334455" required>
                             <i>Teléfono de contacto</i>
                         </div>
                     </div>
                     <!-- Área a comunicarse y mensaje -->
                     <div class="form-group messagge-group">
                         <div class="textBox">
-                            <select id="area">
+                            <select id="area" name="area" required>
                                 <option selected disabled>Área a contactar</option>
                                 <option value="1">Dirección</option>
                                 <option value="2">Administración</option>
@@ -117,13 +117,15 @@
                             </select>
                         </div>
                         <div class="textBox">
-                            <textarea id="mensaje" rows="5" placeholder="Su Mensaje..."></textarea>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Su Mensaje..."></textarea>
                         </div>
                     </div>
-                    <button type="button" class="btn-form" onclick="validarFormulario()">Enviar</button>
-                </div>
+                    <button type="submit" class="btn-form">Enviar</button>
+                </form>
             </article>
         </section>
+        
+        
     </main>
     <footer>
         <section id="footer-content">

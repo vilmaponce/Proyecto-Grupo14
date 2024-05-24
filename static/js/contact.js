@@ -1,13 +1,13 @@
 function validarFormulario() {
     // Obtener valores de los campos
-    var nombre = document.getElementById('nombre').value;
-    var apellido = document.getElementById('apellido').value;
-    var correo = document.getElementById('correo').value;
-    var telefono = document.getElementById('telefono').value;
+    var nombre = document.getElementById('nombre').value.trim();
+    var apellido = document.getElementById('apellido').value.trim();
+    var correo = document.getElementById('correo').value.trim();
+    var telefono = document.getElementById('telefono').value.trim();
     var area = document.getElementById('area').value;
-    var mensaje = document.getElementById('mensaje').value;
+    var mensaje = document.getElementById('mensaje').value.trim();
 
-    // Expresiones para validar el contenido
+    // Expresiones regulares para validar el contenido
     var letrasRegex = /^[A-Za-z\s]+$/; // Permitir solo letras y espacios
     var numerosRegex = /^[0-9]+$/; // Permitir solo números
 
@@ -59,3 +59,4 @@ function limpiarFormulario() {
     document.getElementById('area').value = "";
     document.getElementById('mensaje').value = "";
 }
+
