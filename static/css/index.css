@@ -491,12 +491,13 @@ body {
 
 .container {
     position: flex;
-    width: 400px;
-    height: 550px;
+    width:300px;
+    height:175px;
     padding: 40px;
     background-color: var(--color-terciario);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(143, 135, 135, 0.3);
+    margin-top:150px;
 }
 
 h1 {
@@ -916,7 +917,7 @@ input[type="submit"]:hover {
 
     /************************ Navbar *********/
     .header {
-        width: 100vw;
+        width:100vw;
         height: 10vh;
         padding-left: 1rem;
     }
